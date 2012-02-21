@@ -1,16 +1,15 @@
-%bcond_without bootstrap
+%bcond_with bootstrap
 %global packname  lmtest
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
 Version:          0.9_29
-Release:          1
+Release:          2
 Summary:          Testing Linear Regression Models
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.9-29.tar.gz
-
 Requires:         R-stats R-zoo 
 Requires:         R-stats R-graphics 
 %if %{with bootstrap}
