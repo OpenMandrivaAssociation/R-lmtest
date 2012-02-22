@@ -10,19 +10,14 @@ Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.9-29.tar.gz
-Requires:         R-stats R-zoo 
-Requires:         R-stats R-graphics 
-%if %{with bootstrap}
-Requires:         R-car R-survival
-%else
-Requires:         R-car R-strucchange R-sandwich R-dynlm R-survival R-AER 
+Requires:         R-stats R-zoo R-graphics R-car R-survival
+%if %{without bootstrap}
+Requires:         R-strucchange R-sandwich R-dynlm R-AER
 %endif
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-stats R-zoo
-BuildRequires:    R-stats R-graphics 
-%if %{with bootstrap}
-BuildRequires:    R-car R-survival
-%else
-BuildRequires:    R-car R-strucchange R-sandwich R-dynlm R-survival R-AER 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-stats R-zoo R-graphics R-car R-survival
+%if %{without bootstrap}
+BuildRequires:    R-strucchange R-sandwich R-dynlm R-AER
 %endif
 %rename R-cran-lmtest
 
