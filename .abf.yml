@@ -1,2 +1,4 @@
+removed_sources:
+  lmtest_0.9-29.tar.gz: 320ff64569fc3b9c20514dc2b7b2c603bb046ce5
 sources:
-  "lmtest_0.9-29.tar.gz:"	320ff64569fc3b9c20514dc2b7b2c603bb046ce5
+  lmtest_0.9-30.tar.gz: a088e5c387678f27e377be2d4625ef27324ae34e

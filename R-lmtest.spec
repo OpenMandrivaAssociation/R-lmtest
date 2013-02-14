@@ -3,13 +3,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.9_29
-Release:          2
+Version:          0.9_30
+Release:          1
 Summary:          Testing Linear Regression Models
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.9-29.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.9-30.tar.gz
 Requires:         R-stats R-zoo R-graphics R-car R-survival
 %if %{without bootstrap}
 Requires:         R-strucchange R-sandwich R-dynlm R-AER
